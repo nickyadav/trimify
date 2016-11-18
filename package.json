@@ -1,6 +1,6 @@
 {
   "name": "trimify",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "To remove lead and trail whitespace(s) from a JavaScript String [without using RegExp]",
   "main": "lib/index.js",
   "scripts": {
