@@ -7,12 +7,12 @@ If in some abstracted app, to trim whitespace off a string only either at the be
 #### The solution
 `trimify` allows an additional functionality over JavaScript native String method `trim()` such that you can trim whitespace(s) either in the beginning or the end of string and you don't have to use Regular Expressions.
 
-### Installation
+## Installation
 This module is distributed via npm which is bundled with node and should be installed as one of your project's `dependencies`
 
 `$ npm install trimify --save`
 
-### Usage
+## Usage
 To remove lead and trail whitespace(s) from a JavaScript String [without using RegExp].
 
 ```javaScript
@@ -29,12 +29,15 @@ trimify.trail('\t  This is a string.  \t');
 ```
 
 **trimify(string)**
+
 Returns a string without any leading or trailing whitespace(s).
 
 **trimify.lead(string)**
+
 Returns a string without any leading whitespace(s).
 
 **trimify.trail(string)**
+
 Returns a string without any trailing whitespace(s).
 
 ### Contributions
