@@ -1,0 +1,36 @@
+{
+  "name": "trimify",
+  "version": "0.0.1",
+  "description": "To remove lead and trail whitespace(s) from a JavaScript String [without using RegExp]",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha test -R min"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandeepmittal/trimify.git"
+  },
+  "keywords": [
+    "trim",
+    "whitespace",
+    "trimify",
+    "javascript",
+    "npm",
+    "lead",
+    "leading",
+    "trail",
+    "trailing",
+    "without",
+    "regexp"
+  ],
+  "author": "Aman Mittal (http://amandeepmittal.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amandeepmittal/trimify/issues"
+  },
+  "homepage": "https://github.com/amandeepmittal/trimify#readme",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "3.1.2"
+  }
+}
