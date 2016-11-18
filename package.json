@@ -4,7 +4,7 @@
   "description": "To remove lead and trail whitespace(s) from a JavaScript String [without using RegExp]",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha test -R min"
+    "test": "mocha test -R spec"
   },
   "repository": {
     "type": "git",
