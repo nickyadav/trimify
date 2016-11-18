@@ -15,11 +15,11 @@
     "string",
     "javascript",
     "npm",
+    "whitespace",
     "lead",
     "leading",
     "trail",
     "trailing",
-    "whitespace",
     "regexp",
     "trimify"
   ],
