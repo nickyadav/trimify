@@ -5,8 +5,13 @@
   "main": "lib/index.js",
   "scripts": {
     "commit": "git-cz",
-    "test": "mocha test -w -R spec",
-    "test:single": "mocha test -R spec",
+    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "install": "echo 'Thank you for installing!!!'",
+    "watch:test": "npm t -- --watch",
+    "test": "mocha test -R spec",
+    "cover": "nyc --reporter=lcov npm t",
+    "validate": "npm run cover && npm run check-coverage",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -34,10 +39,12 @@
   "homepage": "https://github.com/amandeepmittal/trimify#readme",
   "devDependencies": {
     "chai": "3.5.0",
+    "codecov.io": "0.1.6",
     "commitizen": "2.8.5",
     "cz-conventional-changelog": "1.1.7",
     "ghooks": "1.3.2",
     "mocha": "3.1.2",
+    "nyc": "9.0.1",
     "semantic-release": "^6.3.2"
   },
   "config": {
@@ -45,7 +52,7 @@
       "path": "node_modules/cz-conventional-changelog"
     },
     "ghooks": {
-      "pre-commit": "npm run test:single"
+      "pre-commit": "npm run validate"
     }
   }
 }
