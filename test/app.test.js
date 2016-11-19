@@ -1,7 +1,7 @@
 const trimify = require('../lib/index');
 const expect = require('chai').expect;
 
-describe('TRIM WHITESPACE(S)', () => {
+describe('trimify', () => {
   it('should remove whitespace(s)', function () {
     expect(trimify('\t  This is a string.  \t')).to.equal('This is a string.');
   });

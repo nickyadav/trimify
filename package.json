@@ -1,14 +1,17 @@
 {
   "name": "trimify",
-  "version": "0.1.1",
+  "version": "0.0.0-semantically-released",
   "description": "To remove lead and trail whitespace(s) from a JavaScript String [without using RegExp]",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha test -R spec"
+    "commit": "git-cz",
+    "test": "mocha test -w -R spec",
+    "test:single": "mocha test -R spec",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amandeepmittal/trimify.git"
+    "url": "https://github.com/amandeepmittal/trimify.git"
   },
   "keywords": [
     "trim",
@@ -31,6 +34,12 @@
   "homepage": "https://github.com/amandeepmittal/trimify#readme",
   "devDependencies": {
     "chai": "3.5.0",
-    "mocha": "3.1.2"
+    "commitizen": "2.8.5",
+    "cz-conventional-changelog": "1.1.7",
+    "mocha": "3.1.2",
+    "semantic-release": "^6.3.2"
+  },
+  "czConfig":{
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
